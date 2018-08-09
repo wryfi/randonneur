@@ -1,0 +1,6 @@
+{
+  "presets": [
+    "env"
+  ],
+  "plugins": ["babel-plugin-cerebral", ["babel-plugin-inferno", { "imports": true }]]
+}
