@@ -24,13 +24,13 @@ export default connect(
                         <Grid columns='3' divided stackable>
                             <GridColumn >
                                 <Header as='h3'>
-                                    <Icon name='box' />
+                                    <Icon name='server' />
                                     <Header.Content>Cabinets</Header.Content>
                                 </Header>
                             </GridColumn>
                             <GridColumn>
                                 <Header as='h3'>
-                                    <Icon name='warehouse' />
+                                    <Icon name='building' />
                                     <Header.Content>Datacenters</Header.Content>
                                 </Header>
                             </GridColumn>
@@ -48,7 +48,7 @@ export default connect(
                             </GridColumn>
                             <GridColumn>
                                 <Header as='h3'>
-                                    <Icon name='server' />
+                                    <Icon name='desktop' />
                                     <Header.Content>Servers</Header.Content>
                                 </Header>
                             </GridColumn>
