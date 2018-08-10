@@ -4,7 +4,7 @@ import { Container } from '@cerebral/react';
 
 import App from './components/App';
 import controller from './controller';
-// import Navigation from './components/Navigation';
+import Navigation from './components/Navigation';
 
 render(
     <Container controller={controller}>
@@ -13,9 +13,9 @@ render(
     document.getElementById('root')
 );
 
-// render(
-//     <Container controller={controller}>
-//         <Navigation />
-//     </Container>,
-//     document.getElementById('nav')
-// );
+render(
+    <Container controller={controller}>
+        <Navigation />
+    </Container>,
+    document.getElementById('nav')
+);

@@ -1,4 +1,4 @@
-import { Controller, Module } from 'cerebral';
+import { Controller } from 'cerebral';
 import Devtools from 'cerebral/devtools';
 
 import app from './app/index';
