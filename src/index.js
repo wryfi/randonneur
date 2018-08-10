@@ -1,8 +1,10 @@
-import { render } from 'inferno';
-import { Container } from '@cerebral/inferno';
+import React from 'react';
+import { render } from 'react-dom';
+import { Container } from '@cerebral/react';
 
-import controller from './controller';
 import App from './components/App';
+import controller from './controller';
+// import Navigation from './components/Navigation';
 
 render(
     <Container controller={controller}>
@@ -10,3 +12,10 @@ render(
     </Container>,
     document.getElementById('root')
 );
+
+// render(
+//     <Container controller={controller}>
+//         <Navigation />
+//     </Container>,
+//     document.getElementById('nav')
+// );

@@ -1,5 +1,7 @@
-import { connect } from "@cerebral/inferno";
+import React from 'react';
+import { connect } from "@cerebral/react";
 import { state, signal } from "cerebral/tags";
+import { Button } from 'semantic-ui-react';
 
 export default connect(
     {
@@ -13,8 +15,8 @@ export default connect(
             <div>
                 <span>{message}</span>
                 <div>
-                <button onClick={() => say_hello()}>hello</button>
-                <button onClick={() => say_goodbye()}>goodbye</button>
+                    <Button primary onClick={() => say_hello()}>hello</Button>
+                    <Button secondary onClick={() => say_goodbye()}>goodbye</Button>
                 </div>
             </div>
         );

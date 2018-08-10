@@ -1,6 +1,5 @@
 import { Module } from 'cerebral';
 import * as sequences from "./sequences";
-import { state, signal } from "cerebral/tags";
 
 export default Module({
     state: {
