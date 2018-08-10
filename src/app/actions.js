@@ -1,9 +1,6 @@
-export function say_hello({ state }) {
-    let message = 'Hello, ' + state.get('name') + '.';
-    state.set('message', message);
-}
-
-export function say_goodbye({ state }) {
-    let message = 'Goodbye, ' + state.get('name') + '.';
-    state.set('message', message);
-}
+import {render} from "react-dom";
+import {Container} from "@cerebral/react";
+import controller from "../controller";
+import App from "../components/App";
+import Cabinets from "../components/Cabinets";
+import React from "react";

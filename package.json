@@ -7,6 +7,7 @@
   "main": "index.js",
   "dependencies": {
     "@cerebral/react": "^3.2.2",
+    "@cerebral/router": "^3.2.2",
     "cerebral": "^4.2.2",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",

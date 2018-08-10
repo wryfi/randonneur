@@ -1,19 +1,18 @@
 import React from 'react';
 import { connect } from "@cerebral/react";
 import { state } from "cerebral/tags";
-import { Container, Image, Menu, Dropdown } from 'semantic-ui-react';
+import { Container, Icon, Menu, Dropdown } from 'semantic-ui-react';
 
 export default connect(
     {
         name: state`name`,
     },
-    function Navigate({ name }) {
+    function Navigate() {
         return (
                 <Menu stackable inverted>
                     <Container>
                         <Menu.Item as='a' header href='/'>
-                            <Image size='mini' src='/logo.png' style={{ marginRight: '1.5em' }} />
-                            {name}
+                            <Icon name='bicycle' size='big' />
                         </Menu.Item>
 
                         <Dropdown item simple text='Hardware'>
