@@ -6,6 +6,7 @@
   "license": "UNLICENSED",
   "main": "index.js",
   "dependencies": {
+    "@cerebral/http": "^4.2.3",
     "@cerebral/react": "^3.2.2",
     "@cerebral/router": "^3.2.2",
     "cerebral": "^4.2.2",

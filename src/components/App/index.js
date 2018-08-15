@@ -9,7 +9,7 @@ import Home from '../Home'
 const pages = {
     home: Home,
     hardware_cabinets: Cabinets
-}
+};
 
 export default connect(
     {

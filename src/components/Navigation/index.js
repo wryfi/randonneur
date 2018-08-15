@@ -25,11 +25,11 @@ export default connect(
                             </Dropdown.Menu>
                         </Dropdown>
 
-                        <Dropdown item simple text='Hosts'>
+                        {/* <Dropdown item simple text='Hosts'>
                             <Dropdown.Menu>
                                 <Dropdown.Item as='a' href='/hosts/'>Hosts</Dropdown.Item>
                             </Dropdown.Menu>
-                        </Dropdown>
+                        </Dropdown> */}
                     </Container>
                 </Menu>
         );
