@@ -2,10 +2,10 @@ import HttpProvider from '@cerebral/http';
 import { Module } from 'cerebral';
 import router from './router';
 import hardware from './modules/hardware';
-import { getMountaineerCabinets } from "./modules/hardware/cabinets/actions";
+import { getCabinet, getCabinets } from "./modules/hardware/cabinets/actions";
 import { setCurrentPage } from './factories';
 
-const http = HttpProvider({
+const api_http = HttpProvider({
     // TODO: configurable URL
     baseUrl: 'http://localhost:8000/api/v1',
     headers: {
@@ -22,9 +22,10 @@ export default Module({
         current_page: 'home'
     },
     signals: {
-        hardware_cabinets_routed: [setCurrentPage('hardware_cabinets'), getMountaineerCabinets],
+        hardware_cabinets_routed: [setCurrentPage('hardware_cabinets'), getCabinets],
+        hardware_cabinet_routed: [setCurrentPage('hardware_cabinet'), getCabinet],
         home_routed: setCurrentPage('home'),
     },
     modules: { hardware, router },
-    providers: { http: http }
+    providers: { api_http: api_http }
 });

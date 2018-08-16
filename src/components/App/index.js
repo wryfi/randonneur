@@ -3,11 +3,12 @@ import { connect } from "@cerebral/react";
 import { state } from "cerebral/tags";
 import { Container } from 'semantic-ui-react';
 import Navigation from '../Navigation';
-import Cabinets from '../Cabinets'
+import { Cabinet, Cabinets } from '../Cabinets'
 import Home from '../Home'
 
 const pages = {
     home: Home,
+    hardware_cabinet: Cabinet,
     hardware_cabinets: Cabinets
 };
 

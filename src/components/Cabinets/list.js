@@ -1,13 +1,15 @@
 import React from 'react';
 import { Card, List } from 'semantic-ui-react';
+import Loading from "../Loading";
 
 function CabinetSummary(props) {
     const cabinet = props.cabinet;
+    const detailUrl = '/hardware/cabinets/' + cabinet['slug'];
     return(
-        <Card href='/hardware/cabinets'>
+        <Card href={detailUrl}>
             <Card.Content>
                 <Card.Header content={cabinet['name']} />
-                <Card.Meta content={cabinet['slug']} />
+                <Card.Meta>{cabinet['datacenter']['name']}</Card.Meta>
                 <Card.Description>
                     <List>
                         <List.Item>
@@ -36,7 +38,9 @@ function CabinetList(props) {
             </Card.Group>
         )
     } else {
-        return <p />
+        return(
+            <Loading />
+        )
     }
 }
 

@@ -7,6 +7,10 @@ export default Router({
             signal: 'home_routed'
         },
         {
+            path: '/hardware/cabinets/:slug',
+            signal: 'hardware_cabinet_routed'
+        },
+        {
             path: '/hardware/cabinets',
             signal: 'hardware_cabinets_routed'
         }
